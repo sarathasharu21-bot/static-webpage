@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family:'Times New Roman', Times, serif;
+    line-height: 1.6;
+    color: #040504;
+    padding-top: 80px; /* adjust based on your header height */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    /* gap: 1rem; */ 
+}
+
+/* Header */
+/* Header styling */
+.header {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Keeps the header at the top */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Container to align items */
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* This was commented/mistyped in your original code */
+    padding: 1rem 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo box styling */
+.logo-box {
+    border: 2px solid #333;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Navigation styling */
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+    padding: 9rem 0;
+    background: white;
+    /* margin-top: 65px; */
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.hero-text .heading {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.hero-text .subheading {
+    font-size: 1.5rem;
+    color: #666;
+    padding-bottom: 0.5rem;
+}
+
+.hero-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border: 2px solid #333;
+    border-radius: 4px;
+}
+
+/* Services Section */
+.services {
+    padding: 7rem 0;
+    background: #fff;
+    text-align: center; /* Center everything */
+    /* margin-top: 50px; */
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom:10px;
+    display: inline-block;
+    width: 100%;
+
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.service-card {
+    background: #f8f9fa;
+    border: 2px solid #ddd;
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.service-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #333;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.service-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.3rem;
+    display: inline-block;
+
+
+}
+
+.service-description {
+    color: #666;
+    padding-bottom: 0.3rem;
+    margin-top: 0;
+}
+
+.view-more {
+    text-align: center;
+}
+
+.view-more-btn {
+    border: 2px solid #333;
+    background: transparent;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.view-more-btn:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* Book Section */
+.book-section {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+
+.book-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.book-text .heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.book-text .description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+
+}
+
+.book-btn {
+    border: 2px solid #333;
+    background: transparent;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.book-btn:hover {
+    background: #333;
+    color: #fff;
+}
+
+.book-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Contact Section */
+.contact {
+    padding: 7rem 0;
+    background: #fff;
+    font-size: small;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.form-group {
+
+}
+
+.form-group label {
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.submit-btn {
+    border: 2px solid #333;
+    background: transparent;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #333;
+    color: #fff;
+}
+
+.map-placeholder {
+    background: #e9ecef;
+    border: 2px solid #333;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #666;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.footer-logo .logo-box {
+    border: 2px solid #fff;
+    color: #fff;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.footer-paragraph {
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footer-right h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.footer-right p {
+    margin-bottom: 0.5rem;
+    color: #ccc;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #666;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+

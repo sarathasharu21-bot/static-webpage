@@ -1,0 +1,121 @@
+/* Header */
+/* Header styling */
+.header {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Keeps the header at the top */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Container to align items */
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* This was commented/mistyped in your original code */
+    padding: 1rem 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo box styling */
+.logo-box {
+    border: 2px solid #333;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Navigation styling */
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #007bff;
+}
+     h1{
+            margin: auto;
+            background-color:lightcyan;
+            color:black;
+            font-style: italic;
+            border: 2px solid black;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            border-radius: 40px;
+            width: 500px;
+            margin-top: 190px;
+        }
+        .home a{
+           text-decoration: none;
+           font-size: 300px;
+           color: rgb(12, 12, 12);
+           margin: 4000px;
+           margin-top: 4000px;
+           background-color:rgb(44, 44, 207);
+        }
+
+        p{
+         text-align: center;
+        }
+/* Footer */
+.footer {
+   margin-top: 150px;
+    background: #333;
+    color: #fff;
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.footer-logo .logo-box {
+    border: 2px solid #fff;
+    color: #fff;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.footer-paragraph {
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footer-right h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.footer-right p {
+    margin-bottom: 0.5rem;
+    color: #ccc;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #666;
+    color: #999;
+    font-size: 0.9rem;
+}
